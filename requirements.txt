@@ -1,0 +1,25 @@
+# Streamlit Community Cloud installs from this file via plain pip — it
+# does not use uv.lock/Dockerfile at all (those remain for local dev,
+# testing, and the Docker path, kept in the repo but unused here).
+
+# Forces the CPU-only PyTorch wheel. PyPI's default torch wheel on Linux
+# pulls a full CUDA/GPU stack as hard dependencies — several GB wasted on
+# hardware that has no GPU to use it anyway. Do not pin torch with a
+# "+cpu" suffix yourself (e.g. torch==2.14.0+cpu) — that causes a
+# "could not find a version" error; list it plain and pip resolves the
+# correct CPU build from this index on its own.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+
+# spaCy's model isn't a regular pip package — installed directly from its
+# published wheel, since there's no build-time hook here (unlike Docker)
+# to run `python -m spacy download`.
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+# Installs the project itself (editable), which pulls in everything
+# declared in pyproject.toml's own dependencies (pdfplumber, python-docx,
+# sentence-transformers, spacy, streamlit) — no need to duplicate that
+# list here. This is also what makes `ats_gap_analyzer` importable at
+# all: without it, app.py's `from ats_gap_analyzer.pipeline...` imports
+# would fail, since nothing else installs the src/ layout as a package.
+-e .
