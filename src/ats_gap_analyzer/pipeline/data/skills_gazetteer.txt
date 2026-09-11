@@ -1,0 +1,134 @@
+# Curated skills/tools gazetteer for Stage 3 keyword extraction.
+# One term per line. Lines starting with # are ignored. Matching is
+# case-insensitive, so casing here only controls the canonical display
+# form used in output. Feel free to add/remove terms as needed —
+# this list is expected to grow as the tool is tested against more
+# resumes and job descriptions.
+
+# Programming languages
+Python
+Java
+JavaScript
+TypeScript
+C++
+C#
+R
+SQL
+Go
+Rust
+Scala
+PHP
+Swift
+Kotlin
+
+# ML / DS frameworks & libraries
+TensorFlow
+PyTorch
+Keras
+Scikit-learn
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Plotly
+NLTK
+spaCy
+Hugging Face
+Transformers
+XGBoost
+LightGBM
+OpenCV
+
+# Data tools & platforms
+Tableau
+Power BI
+Excel
+Jupyter Notebook
+Apache Spark
+Hadoop
+Airflow
+Snowflake
+Databricks
+pgAdmin
+
+# Databases
+MySQL
+PostgreSQL
+MongoDB
+Microsoft SQL Server
+SQLite
+Redis
+Oracle
+DynamoDB
+Cassandra
+
+# Cloud & DevOps
+AWS
+Azure
+GCP
+Google Cloud Platform
+Docker
+Kubernetes
+Git
+GitHub
+GitLab
+CI/CD
+Jenkins
+Terraform
+
+# Web frameworks
+Django
+Flask
+FastAPI
+Streamlit
+React
+Node.js
+Express
+Next.js
+
+# ML / DS concepts
+Machine Learning
+Deep Learning
+Natural Language Processing
+NLP
+Computer Vision
+Generative AI
+LLM
+Large Language Models
+Neural Networks
+Data Analysis
+Data Visualization
+Data Engineering
+Data Modeling
+ETL
+A/B Testing
+Statistics
+Predictive Modeling
+Feature Engineering
+Time Series Analysis
+Reinforcement Learning
+Recommendation Systems
+Random Forest
+Logistic Regression
+Support Vector Machine
+SVM
+Decision Tree
+Naive Bayes
+K-Means
+K-Nearest Neighbors
+Gradient Boosting
+Ensemble Learning
+Mean Absolute Error
+
+# Roles & general
+Data Scientist
+Software Engineer
+Data Engineer
+Data Analyst
+Machine Learning Engineer
+Product Management
+Agile
+Scrum
+Project Management
+Stakeholder Management
+Tkinter

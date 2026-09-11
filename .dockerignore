@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.gitignore
+.python-version
+
+# Not needed at runtime — keep the image smaller and the build context
+# upload faster.
+tests/
+docs/
+
+# Local-only, never something to bake into an image.
+.env
